@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const CrosshairPreview = () => {
     <Wrapper>
       <h1>Crosshair Preview</h1>
     </Wrapper>
-  )
-}
+  );
+};
 
 export default CrosshairPreview;

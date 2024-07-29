@@ -14,11 +14,15 @@
     "plugin:react/recommended"
   ],
   "plugins": [
-        "react"
+    "react",
+    "@stylistic"
   ],
   "parser": "@typescript-eslint/parser",
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "react/jsx-indent": ["error", 2]
+    "react/jsx-indent": ["error", 2],
+    "import/no-named-as-default": 0,
+    "@stylistic/semi": 2,
+    "@stylistic/quotes": ["error", "single"]
   }
 }

@@ -1,8 +1,8 @@
-import { createContext, useContext, StrictMode } from "react";
-import Designer from "./pages/Designer";
-import Pages from "./enums/pages";
+import { createContext, useContext, StrictMode } from 'react';
+import Designer from './pages/Designer';
+import Pages from './enums/pages';
 
-const PageContext = createContext(Pages.Designer)
+const PageContext = createContext(Pages.Designer);
 
 const getPageComponent = (page: Pages) => {
   switch (page) {
@@ -11,7 +11,7 @@ const getPageComponent = (page: Pages) => {
     default:
       return Designer;
   }
-}
+};
 
 const App = () => {
   const currentPage = useContext(PageContext);
@@ -23,7 +23,7 @@ const App = () => {
         {<PageComponent />}
       </PageContext.Provider>
     </StrictMode>
-  )
+  );
 };
 
 export default App;
