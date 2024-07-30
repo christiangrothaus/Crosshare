@@ -5,6 +5,6 @@ type CrosshairDotModel = {
   borderEnabled: boolean;
   borderWidth: number;
   borderColor: string;
-} | CrosshairSectionModel;
+} & CrosshairSectionModel;
 
 export default CrosshairDotModel;

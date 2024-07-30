@@ -23,6 +23,7 @@
     "react/jsx-indent": ["error", 2],
     "import/no-named-as-default": 0,
     "@stylistic/semi": 2,
-    "@stylistic/quotes": ["error", "single"]
+    "@stylistic/quotes": ["error", "single"],
+    "@stylistic/comma-dangle": ["error", "never"]
   }
 }

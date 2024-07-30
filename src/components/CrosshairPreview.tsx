@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import CrosshairModel from '../models/Crosshair.model';
+import CrosshairRenderer from './CrosshairRenderer';
 
 const Wrapper = styled.div`
   display: flex;
@@ -8,10 +10,52 @@ const Wrapper = styled.div`
   background-color: #f0f0f0;
 `;
 
+const mockCrosshair: CrosshairModel = {
+  name: 'Default',
+  id: 1,
+  layerId: 1,
+  layers: [
+    {
+      id: 1,
+      name: 'Default',
+      zIndex: 1,
+      dot: {
+        id: 1,
+        layerId: 1,
+        color: '#ff0000',
+        opacity: 0,
+        diameter: 2,
+        borderEnabled: false,
+        borderWidth: 0,
+        borderColor: '#000000'
+      },
+      plus: {
+        id: 1,
+        layerId: 1,
+        color: '#00ff00',
+        opacity: 1,
+        length: 10,
+        width: 2,
+        gap: 1,
+        rotation: 0,
+        borderEnabled: false,
+        borderWidth: 0,
+        borderColor: '#000000',
+        topEnabled: true,
+        rightEnabled: true,
+        bottomEnabled: true,
+        leftEnabled: true
+      },
+      xOffset: 0,
+      yOffset: 0
+    }
+  ]
+};
+
 const CrosshairPreview = () => {
   return (
     <Wrapper>
-      <h1>Crosshair Preview</h1>
+      <CrosshairRenderer crosshair={mockCrosshair} />
     </Wrapper>
   );
 };

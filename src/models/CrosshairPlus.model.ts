@@ -1,7 +1,6 @@
 import CrosshairSectionModel from './CrosshairSection.model';
 
 type CrosshairPlusModel = {
-  enabled: boolean;
   length: number;
   width: number;
   gap: number;
@@ -13,6 +12,6 @@ type CrosshairPlusModel = {
   rightEnabled: boolean;
   bottomEnabled: boolean;
   leftEnabled: boolean;
-} | CrosshairSectionModel;
+} & CrosshairSectionModel;
 
 export default CrosshairPlusModel;

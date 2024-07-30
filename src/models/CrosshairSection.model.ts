@@ -1,5 +1,4 @@
 type CrosshairSectionModel = {
-  enabled: boolean;
   id: number;
   layerId: number;
   color: string;
