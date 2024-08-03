@@ -4,8 +4,8 @@ export enum Spacing {
   M = '1em',
   L = '1.5em',
   XL = '2em',
-  XXL = '3em',
-  XXXL = '4em'
+  XXL = '2.5em',
+  XXXL = '3em'
 }
 
 export const BorderRadius = Spacing.S;
