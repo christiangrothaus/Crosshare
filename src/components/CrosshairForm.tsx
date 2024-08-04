@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { Spacing } from '../constants/css';
 import FormSection from './FormSection';
-import RangeSlider from './inputs/RangeSlider';
-import Toggle from './inputs/Toggle';
+import RangeSlider from './future-inputs/RangeSlider';
+import Toggle from './future-inputs/Toggle';
 
 const Row = styled.div`
   display: flex;
