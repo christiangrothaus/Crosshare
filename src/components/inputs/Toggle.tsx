@@ -2,26 +2,13 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { Spacing } from '../../constants/css';
 
-const SlideSize = Spacing.L;
+const HandleSize = Spacing.L;
 
 const RailWidth = Spacing.XXL;
 
-// const Slider = styled.div<{value: boolean}>`
-//   min-height: ${SlideSize};
-//   min-width: ${SlideSize};
-//   width: fit-content;
-//   height: fit-content;
-//   background-color: ${({ theme }) => theme.text.primary};
-//   border-radius: 50%;
-//   animation-duration: 0.25s;
-//   transition: all 0.25s ease-in-out;
-//   animation-fill-mode: forwards;
-//   animation-name: ${props => props.value ? SlideRight : SlideLeft};
-// `;
-
-const Slider = styled.div<{value: boolean}>`
-  min-height: ${SlideSize};
-  min-width: ${SlideSize};
+const Handle = styled.div<{ value: boolean }>`
+  min-height: ${HandleSize};
+  min-width: ${HandleSize};
   width: fit-content;
   height: fit-content;
   background-color: ${({ theme }) => theme.text.primary};
@@ -30,12 +17,12 @@ const Slider = styled.div<{value: boolean}>`
   transform: translateX(0%);
 
   &[value="true"] {
-    transform: translateX(calc(${Spacing.XXL} - ${SlideSize}));
+    transform: translateX(calc(${Spacing.XXL} - ${HandleSize}));
   }
 `;
 
-const Rail = styled.div<{value: boolean}>`
-  border-radius: ${SlideSize};
+const Rail = styled.div<{ value: boolean }>`
+  border-radius: ${HandleSize};
   width: ${RailWidth};
   margin: ${Spacing.XS};
   cursor: pointer;
@@ -68,8 +55,8 @@ const Toggle = () => {
 
   return (
     <Rail value={value} onClick={handleClick}>
-      <Slider value={value}></Slider>
-      <input hidden type="checkbox" />
+      <Handle value={value}></Handle>
+      <input hidden type="checkbox" checked={value} />
     </Rail>
   );
 };

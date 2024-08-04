@@ -15,6 +15,7 @@ const TopBottomWrapper = styled.div<PlusWrapperProps>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 0;
   gap: ${props => props.$gap}px;
 `;
 
@@ -28,6 +29,7 @@ const RightLeftWrapper = styled.div<PlusWrapperProps>`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 0;
   gap: ${props => props.$gap}px;
 `;
 
@@ -59,7 +61,7 @@ type Props = {
   plus: CrosshairPlusModel
 };
 
-const CrosshairPlusRenderer = ({plus}: Props) => {
+const CrosshairPlusRenderer = ({ plus }: Props) => {
   const isEvenWidth = plus.width % 2 === 0;
   const gap = plus.gap - 1;
 

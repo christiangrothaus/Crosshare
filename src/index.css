@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	flex-shrink: 0;
+	flex-grow: 1;
 }
 
 button {
