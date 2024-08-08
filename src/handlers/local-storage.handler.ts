@@ -3,7 +3,7 @@ import LocalStorageChannels from '../channels/local-storage.channels';
 import { loadAllCrosshairs, loadPreferences, saveCrosshair, savePreferences } from '../utils/local-storage.util';
 
 const buildStorageHandlers = (): void => {
-  ipcMain.handle(LocalStorageChannels.LoadPreferences, async (event, args) => {
+  ipcMain.handle(LocalStorageChannels.LoadPreferences, async () => {
     return loadPreferences();
   });
   
@@ -11,7 +11,7 @@ const buildStorageHandlers = (): void => {
     return savePreferences(args[0]);
   });
   
-  ipcMain.handle(LocalStorageChannels.LoadAllCrosshairs, async (event, args) => {
+  ipcMain.handle(LocalStorageChannels.LoadAllCrosshairs, async () => {
     return loadAllCrosshairs();
   });
 
