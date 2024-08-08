@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import { Spacing } from '../../constants/css';
+import { Spacing } from '../../constants/css.constant';
 
 const HandleSize = Spacing.L;
 

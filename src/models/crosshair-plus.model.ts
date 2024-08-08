@@ -1,4 +1,4 @@
-import CrosshairSectionModel from './CrosshairSection.model';
+import CrosshairSectionModel from './crosshair-section.model';
 
 type CrosshairPlusModel = {
   length: number;

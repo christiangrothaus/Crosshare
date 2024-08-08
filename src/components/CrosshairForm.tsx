@@ -1,8 +1,8 @@
+import { Form, FormCheck, FormGroup, FormLabel } from 'react-bootstrap';
+import FormRange from 'react-bootstrap/esm/FormRange';
 import styled from 'styled-components';
-import { Spacing } from '../constants/css';
+import { Spacing } from '../constants/css.constant';
 import FormSection from './FormSection';
-import RangeSlider from './future-inputs/RangeSlider';
-import Toggle from './future-inputs/Toggle';
 
 const Row = styled.div`
   display: flex;
@@ -19,19 +19,30 @@ const Column = styled.div`
 
 const CrosshairForm = () => {
   return (
-    <Row>
-      <Column>
-        <FormSection title='Dot'>
-          <Toggle />
-          <RangeSlider max={10} />
-        </FormSection>
-      </Column>
-      <Column>
-        <FormSection title='Layer Settings'>
-          <Toggle />
-        </FormSection>
-      </Column>
-    </Row>
+    <Form>
+      <Row>
+        <Column>
+          <FormSection title='Dot'>
+            <FormGroup>
+              <FormCheck type='checkbox' label='Show' />
+              <FormCheck type='checkbox' label='Show Border' />
+            </FormGroup>
+            <FormGroup>
+              <FormLabel>Size</FormLabel>
+              <FormRange />
+            </FormGroup>
+            <FormGroup>
+              <FormLabel>Opacity</FormLabel>
+              <FormRange />
+            </FormGroup>
+          </FormSection>
+        </Column>
+        <Column>
+          <FormSection title='Layer Settings'>
+          </FormSection>
+        </Column>
+      </Row>
+    </Form>
   );
 };
 

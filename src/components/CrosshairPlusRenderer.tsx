@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CrosshairPlusModel from '../models/CrosshairPlus.model';
+import CrosshairPlusModel from '../models/crosshair-plus.model';
 
 type PlusElementProps = {
   $plus: CrosshairPlusModel;

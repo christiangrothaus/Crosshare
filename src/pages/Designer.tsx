@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import CrosshairForm from '../components/CrosshairForm';
 import CrosshairPreview from '../components/CrosshairPreview';
 import PageWrapper from '../components/PageWrapper';
-import { Spacing } from '../constants/css';
+import { Spacing } from '../constants/css.constant';
 
 const FormWrapper = styled.div`
   padding: ${Spacing.M};

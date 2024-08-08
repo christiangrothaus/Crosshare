@@ -1,9 +1,8 @@
-import CrosshairLayerModel from './CrosshairLayer.model';
+import CrosshairLayerModel from './crosshair-layer.model';
 
 type CrosshairModel = {
   name: string;
   id: number;
-  layerId: number;
   layers: Array<CrosshairLayerModel>
 };
 

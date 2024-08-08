@@ -1,4 +1,4 @@
-import Theme from '../models/Theme.model';
+import Theme from '../models/theme.model';
 
 const DarkTheme: Theme = {
   border: '#2f2f2f',

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CrosshairLayerModel from '../models/CrosshairLayer.model';
+import CrosshairLayerModel from '../models/crosshair-layer.model';
 import CrosshairDotRenderer from './CrosshairDotRenderer';
 import CrosshairPlusRenderer from './CrosshairPlusRenderer';
 

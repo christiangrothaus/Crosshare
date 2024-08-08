@@ -1,4 +1,4 @@
-import CrosshairSectionModel from './CrosshairSection.model';
+import CrosshairSectionModel from './crosshair-section.model';
 
 type CrosshairDotModel = {
   diameter: number;

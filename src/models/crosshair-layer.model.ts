@@ -1,8 +1,7 @@
-import CrosshairDotModel from './CrosshairDot.model';
-import CrosshairPlusModel from './CrosshairPlus.model';
+import CrosshairDotModel from './crosshair-dot.model';
+import CrosshairPlusModel from './crosshair-plus.model';
 
 type CrosshairLayerModel = {
-  id: number;
   name: string;
   zIndex: number;
   dot: CrosshairDotModel;

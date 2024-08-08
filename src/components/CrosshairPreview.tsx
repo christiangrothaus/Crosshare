@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CrosshairModel from '../models/Crosshair.model';
+import CrosshairModel from '../models/crosshair.model';
 import CrosshairRenderer from './CrosshairRenderer';
 
 const Wrapper = styled.div`
@@ -13,15 +13,11 @@ const Wrapper = styled.div`
 const mockCrosshair: CrosshairModel = {
   name: 'Default',
   id: 1,
-  layerId: 1,
   layers: [
     {
-      id: 1,
       name: 'Default',
       zIndex: 1,
       dot: {
-        id: 1,
-        layerId: 1,
         color: '#ff0000',
         opacity: 0,
         diameter: 2,
@@ -30,8 +26,6 @@ const mockCrosshair: CrosshairModel = {
         borderColor: '#000000'
       },
       plus: {
-        id: 1,
-        layerId: 1,
         color: '#00ff00',
         opacity: 1,
         length: 10,
